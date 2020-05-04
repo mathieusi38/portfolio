@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
-
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <script
 			  src="https://code.jquery.com/jquery-3.5.0.min.js"
 			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
@@ -20,167 +21,194 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="style.min.css">
+
+
   </head>
   <body>
 
+<div class="preload">
+
+  <h1>TEST</h1>
+
+</div>
+
+
+
     <div class="container-fluid">
       <header>
-        <h1 id="mathieu">Mathieu Siaud</h1>
-        <h2 id="dev">Etudiant Développeur web</h2>
+        <!-- <h1 id="mathieu">Mathieu Siaud</h1>
+        <h2 id="dev">Etudiant Développeur web</h2> -->
+
+        <div class="box lax" data-lax-preset="rightToLeft-.1 fadeInOut">
+
+            <div class="title">
+                <span class="block"></span>
+                <h1>Mathieu Siaud</h1>
+            </div>
+
+            <div class="role">
+                <div class="block"></div>
+                <p>Etudiant Développeur web</p>
+            </div>
+
+            <!-- <svg viewBox="0 0 160 160" width="160" height="160">
+              <circle cx="80" cy="80" r="50" />
+              <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+                <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#FFF">
+                  <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s" repeatCount="indefinite" />
+                </path>
+              </g>
+              <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
+            </svg> -->
+
+
+        </div>
+
+
+</div>
+
       </header>
-
-<div class="row">
-  <div class="col-xl-6 col-12">
-    <div class="wrapper">
-
-        <div class="intro text-center">
-          <h1 id="intro_pres">Mathieu Siaud</h1>
-          <p id="presentation">Etudiant en DUT MMI sur Grenoble - Portfolio</p>
-            <svg class="bi bi-arrow-bar-down" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M11.354 10.146a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 01.708-.708L8 12.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-            <path fill-rule="evenodd" d="M8 6a.5.5 0 01.5.5V13a.5.5 0 01-1 0V6.5A.5.5 0 018 6zM2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
-            </svg>
-        </div>
-
-        <div class="second_bloc text-center">
-          <h3 id="intro_pres_moi">Une présentation de moi ? </h3>
-        </div>
-
-        <div class="3_bloc text-center">
-          <h3 id="mes_formations">Mes formations </h3>
-        </div>
-
-        <div class="4_bloc text-center">
-          <h3 id="mes_competences">Mes compétences </h3>
-        </div>
-
-
-     </div>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-6 col-12 text-white p-5">
+      <h1 id="title_pres">Une présentation ?</h1>
     </div>
-      <div class="col-xl-6 col-12 p-0">
-        <img  class="img-fluid" src="IMG_20181217_195312.jpg" alt="" />
+    <div class="col-xl-6 col-12  text-white">
+        <p id="bloc_de_presentation">
+      je m’appelle Mathieu Siaud, je suis en 2ème année du DUT métiers du multimédia et de l’internet, Passionné par la création de site internet, et convaincu que la pluridisciplinarité est essentielle, j’ai choisi de m’orienter vers le métier de développeur web. Je suis particulièrement attaché à la qualité de l'expérience utilisateur sur un site web.
+       Je possède de solides connaissances et compétences en développement web.
+        </p>
+    </div>
 
-        <div class="bloc_de_presentation">
-
-          <p id="text_presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          </p>
-
-          <div class="cv_carte">
-            <div class="row text-center">
-
-
-            <div class="col-6">
-              <!-- Card -->
-              <div class="card card-cascade wider">
-                <!-- Card image -->
-                <div class="view view-cascade gradient-card-header peach-gradient">
-                  <!-- Title -->
-                  <h2 class="card-header-title mb-3 ">Mon CV</h2>
-                </div>
-                <!-- Card content -->
-                <div class="card-body card-body-cascade text-center">
-                  <!-- Text -->
-                  <p class="card-text"> Pour en savoir d'avantages sur moi, vous pouvez consulter mon cv, qui est disponible via le bouton ci-dessous</p>
-                  <!-- Link -->
-                  <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                    <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
-                  </a>
-
-                </div>
-                <!-- Card content -->
-
-              </div>
-              <!-- Card -->
-
-
-            </div>
-
-            <div class="col-6">
-              <!-- Card -->
-              <div class="card card-cascade wider">
-                <!-- Card image -->
-                <div class="view view-cascade gradient-card-header peach-gradient">
-                  <!-- Title -->
-                  <h2 class="card-header-title mb-3 ">Ma carte de visite</h2>
-                </div>
-                <!-- Card content -->
-                <div class="card-body card-body-cascade text-center">
-                  <!-- Text -->
-                  <p class="card-text"> Pour en savoir d'avantages sur moi, vous pouvez consulter mon cv, qui est disponible via le bouton ci-dessous</p>
-                  <!-- Link -->
-                  <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                    <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
-                  </a>
-
-                </div>
-                <!-- Card content -->
-
-              </div>
-              <!-- Card -->
-            </div>
-
-
-            <div class="col-xs-10 col-xs-offset-1 col-sm-11 col-sm-offset-2">
-                      <ul class="timeline">
-                          <li class="timeline-item">
-                              <div class="timeline-info">
-                                  <span>March 12, 2016</span>
-                              </div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h3 class="timeline-title">Event Title</h3>
-                                  <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                      eu pede mollis pretium. Pellentesque ut neque.</p>
-                              </div>
-                          </li>
-                          <li class="timeline-item">
-                              <div class="timeline-info">
-                                  <span>March 23, 2016</span>
-                              </div>
-                              <div class="timeline-marker"></div>
-                              <div class="timeline-content">
-                                  <h3 class="timeline-title">Event Title</h3>
-                                  <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                      eu pede mollis pretium. Pellentesque ut neque. </p>
-                              </div>
-                          </li>
-                      </div>
-</div>
-
-<div class="blc_competences text-center ">
+  </div>
 
 
 
-    <i class="fab fa-html5 fa-5x"></i>
-    <i class="fab fa-css3-alt fa-5x pl-4"></i>
-    <i class="fab fa-js-square fa-5x pl-4"></i>
-
-
-    <i class="fab fa-wordpress fa-5x pl-4"></i>
-    <i class="fab fa-react fa-5x pl-4"></i>
-    <i class="fab fa-php fa-5x pl-4"></i>
-
-</div>
-
-</div>
+    <div class="button">Mon CV</div>
 
 
 </div>
+
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Education</h2>
+      </div>
+
+
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="fas fa-graduation-cap fa-2x icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
           </div>
+          <div>
+            <p class="text-dark mb-1">2018</p>
+            <h4>BAC Sciences et Technologies de l'Industrie et du Développement Durable </h4>
+            <p class="mb-0 text-light">Lycée Vaucanson</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="fas fa-graduation-cap fa-2x icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2020</p>
+            <h4>DUT Métiers du multimédia et de l'Internet </h4>
+            <p class="mb-0 text-light">Université Grenoble Alpes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+</section>
 
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title-exp">Experience</h2>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center">
+        <i class="fab fa-html5 fa-4x icone-skill pb-3"></i>
+        <h4 id="name_skill">HTML</h4>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center">
+        <i class="fab fa-css3-alt fa-4x icone-skill pb-3"></i>
+        <h4 id="name_skill">CSS</h4>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center">
+        <i class="fab fa-js-square fa-4x icone-skill pb-3"></i>
+        <h4 id="name_skill">javascript</h4>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center">
+        <i class="fab fa-wordpress fa-4x icone-skill pb-3"></i>
+        <h4 id="name_skill">WordPress</h4>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center">
+        <i class="fab fa-php fa-4x icone-skill pb-3"></i>
+        <h4 id="name_skill">PHP</h4>
+      </div>
+      <div class="col-lg-2 col-md-2 text-center">
+        <i class="fab fa-react fa-4x icone-skill pb-3"></i>
+        <h4 id="name_skill">ReactJS</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-fluid pl-0">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title-exp3">Portfolio</h2>
+      </div>
+    </div>
+
+        <div class="card-column column-0">
+          <div  id="openNav" class="card card-color-0 " data-toggle="modal" data-target="#exampleModalPreview">>
+            <div class="border"></div>
+            <img src="adopt.jpg" />
+            <h1> Adopt-Systems - Flo</h1>
+          </div>
+          <div class="card card-color-2">
+            <div class="border"></div>
+            <img src="img_escape_game_1.jpg" />
+            <h1>Escape Game : Immersive</h1>
+          </div>
         </div>
 
+        <div class="card-column column-1">
+          <div class="card card-color-1">
+            <div class="border"></div>
+            <img src="adopt.jpg" />
+            <h1> Adopt-Systems - Flo</h1>
+          </div>
+          <div class="card card-color-2">
+            <div class="border"></div>
+            <img src="img_escape_game_1.jpg" />
+            <h1>Escape Game : Immersive</h1>
+          </div>
+        </div>
 
+      <div id="cover" class="cover"></div>
+
+      <div id="open-content" class="open-content">
+        <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+        <img id="open-content-image" src="" />
+        <div class="text" id="open-content-text">
+        </div>
       </div>
 
 
     </div>
+  </div>
+</section>
 
-<div class="portfolio_cont">
-<div class="container my-5">
-  <!-- Section -->
- <section>
 
    <style>
      .gallery {
@@ -227,157 +255,82 @@
      }
    </style>
 
-   <!-- Modal -->
-   <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-       <div class="modal-content">
-         <div class="modal-body p-0">
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
-
-           <!-- Grid row -->
-           <div class="row">
-
-             <!-- Grid column -->
-             <div class="col-md-6 py-5 pl-5">
-
-               <h5 class="font-weight-normal mb-3">Paper cup mockup</h5>
-
-               <p class="text-muted">Key letters, explain which writing we he carpeting or fame, the itch expand medical amped through constructing time. And scarfs, gain, get showed accounts decades.</p>
-
-               <ul class="list-unstyled font-small mt-5">
-                 <li>
-                   <p class="text-uppercase mb-2"><strong>Client</strong></p>
-                   <p class="text-muted mb-4">Envato Inc.</p>
-                 </li>
-
-                 <li>
-                   <p class="text-uppercase mb-2"><strong>Date</strong></p>
-                   <p class="text-muted mb-4">June 27, 2019</p>
-                 </li>
-
-                 <li>
-                   <p class="text-uppercase mb-2"><strong>Skills</strong></p>
-                   <p class="text-muted mb-4">Design, HTML, CSS, Javascript</p>
-                 </li>
-
-                 <li>
-                   <p class="text-uppercase mb-2"><strong>Address</strong></p>
-                   <a href="https://mdbootstrap.com/docs/jquery/design-blocks/">MDBootstrap</a>
-                 </li>
-               </ul>
-
-             </div>
-             <!-- Grid column -->
-
-             <!-- Grid column -->
-             <div class="col-md-6">
-
-               <div class="view rounded-right">
-                 <img class="img-fluid" src="escape_game.jpg" alt="Sample image">
-               </div>
-
-             </div>
-             <!-- Grid column -->
-
-           </div>
-           <!-- Grid row -->
-
-         </div>
-       </div>
-     </div>
-   </div>
-
-
-   <!-- Grid row -->
-   <div class="row">
-
-     <!-- Grid column -->
-     <div class="col-md-12 white-text d-flex justify-content-center mb-5">
-
-       <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="all">All</button>
-       <p class="font-weight-bold mb-0 px-1 py-1">/</p>
-       <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="1">Développement</button>
-       <p class="font-weight-bold mb-0 px-1 py-1">/</p>
-       <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="2">Autres</button>
-
-     </div>
-     <!-- Grid column -->
-
-   </div>
-   <!-- Grid row -->
-
-   <!-- Grid row -->
-   <div class="gallery mb-5" id="gallery">
-
-     <!-- Grid column -->
-     <div class="mb-3 pics all 2 animation">
-       <a data-toggle="modal" data-target="#basicExampleModal">
-         <img class="img-fluid z-depth-1 rounded" src="escape_game.jpg" alt="Card image cap">
-       </a>
-     </div>
-     <!-- Grid column -->
-
-     <!-- Grid column -->
-     <div class="mb-3 pics animation all 1">
-       <a data-toggle="modal" data-target="#basicExampleModal">
-         <img class="img-fluid z-depth-1 rounded" src="cd.jpg" alt="Card image cap">
-       </a>
-     </div>
-     <!-- Grid column -->
-
-     <!-- Grid column -->
-     <div class="mb-3 pics animation all 1">
-       <a data-toggle="modal" data-target="#basicExampleModal">
-         <img class="img-fluid z-depth-1 rounded" src="team-3373638_1920.jpg" alt="Card image cap">
-       </a>
-     </div>
-     <!-- Grid column -->
-
-     <!-- Grid column -->
-     <div class="mb-3 pics all 2 animation">
-       <a data-toggle="modal" data-target="#basicExampleModal">
-         <img class="img-fluid z-depth-1 rounded" src="capture.jpg" alt="Card image cap">
-       </a>
-     </div>
-     <!-- Grid column -->
-
-     <!-- Grid column -->
-     <div class="mb-3 pics all 2 animation">
-       <a data-toggle="modal" data-target="#basicExampleModal">
-         <img class="img-fluid z-depth-1 rounded" src="adopt.jpg" alt="Card image cap">
-       </a>
-     </div>
-     <!-- Grid column -->
-
-     <!-- Grid column -->
-     <div class="mb-3 pics animation all 1">
-       <a data-toggle="modal" data-target="#basicExampleModal">
-         <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Vertical/5.jpg" alt="Card image cap">
-       </a>
-     </div>
-     <!-- Grid column -->
-
-   </div>
-   <!-- Grid row -->
-
- </section>
- <!-- Section -->
 
 
 
 </div>
 
 
+<!-- Modal -->
+<!-- <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content-full-width modal-content ">
+            <div class=" modal-header-full-width   modal-header text-center">
+                <h5 class="modal-title w-100" id="exampleModalPreviewLabel">Material Design  Full Screen Modal</h5>
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+                <h1 class="section-heading text-center wow fadeIn my-5 pt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                   sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+            </div>
+            <div class="modal-footer-full-width  modal-footer">
+                <button type="button" class="btn btn-danger btn-md btn-rounded" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> -->
 
+<div id="myNav" class="overlay">
+  <div class="overley-content text-center">
+  <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+  <!-- <img id="img_content" src="adopt.jpg" alt="" /> -->
+  <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <video class="embed-responsive-item video-fluid z-depth-1" autoplay loop controls muted>
+  <source id="video_content" src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+</video>
+</div>
+  <h4 id="content_title">Adopt-Systems</h4>
+
+  <p id="content_text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
   </div>
 </div>
+
+
+<footer>
+
+
+  <div class="social-btns">
+    <a class="btn twitter" href="#"><i class="fab fa-twitter fa-3x"></i></a>
+    <a class="btn google" href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+    <a class="btn dribbble" href="#"><i class="far fa-envelope"></i></a>
+  </div>
+
+</footer>
 
   </body>
 
 <style>
+
+
+
+
+
 body{
 
   background-color: #330033;
@@ -399,6 +352,62 @@ $(".filter").click(function () {
   }, 300);
 });
 });
+
+
 </script>
+
+<script type="text/javascript">
+ScrollReveal().reveal('#title_pres', {
+	origin: 'left',
+	distance: '300px',
+    duration: 1200,
+});
+
+ScrollReveal().reveal('.section-title', {
+	origin: 'right',
+	distance: '300px',
+    duration: 1200,
+});
+
+ScrollReveal().reveal('.section-title-exp', {
+	origin: 'left',
+	distance: '300px',
+    duration: 1200,
+});
+
+ScrollReveal().reveal('.section-title-exp3', {
+	origin: 'right',
+	distance: '300px',
+    duration: 1200,
+});
+
+
+</script>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+<script src="main.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+lax.setup() // init
+
+const updateLax = () => {
+  lax.update(window.scrollY)
+  window.requestAnimationFrame(updateLax)
+}
+
+window.requestAnimationFrame(updateLax)
+}
+
+</script>
+
 
 </html>
