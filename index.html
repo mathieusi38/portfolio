@@ -26,20 +26,12 @@
   </head>
   <body>
 
-<div class="preload">
-
-  <h1>TEST</h1>
-
-</div>
-
-
-
     <div class="container-fluid">
       <header>
         <!-- <h1 id="mathieu">Mathieu Siaud</h1>
         <h2 id="dev">Etudiant Développeur web</h2> -->
 
-        <div class="box lax" data-lax-preset="rightToLeft-.1 fadeInOut">
+        <div class="box lax" data-lax-preset="fadeInOut">
 
             <div class="title">
                 <span class="block"></span>
@@ -68,9 +60,24 @@
 </div>
 
       </header>
+<div class="sombre">
+<div class="call-to-action text-center">
+    <p id="text_light">
+      Il fait un peu sombre ici
+      <br>
+Il Faudrait mettre de la lumière.
+    </p>
+    <div class="button_lumiere">J'allume la lumière</div>
+</div>
+
+
+</div>
+
+<div class="bloc_pres">
+
 <div class="container">
-  <div class="row">
-    <div class="col-xl-6 col-12 text-white p-5">
+  <div class="row" style="position: relative; z-index: -14;">
+    <div class="col-xl-6 col-12 text-white p-sm-5 p-0 pb-5 pb-sm-0">
       <h1 id="title_pres">Une présentation ?</h1>
     </div>
     <div class="col-xl-6 col-12  text-white">
@@ -80,16 +87,20 @@
         </p>
     </div>
 
+    <div class="photo">
+
+    </div>
+
+  </div>
   </div>
 
-
-
-    <div class="button">Mon CV</div>
+    <div class="button"  style="z-index: -14;">Mon CV</div>
 
 
 </div>
+<div class="main" >
 
-<section class="section position-relative">
+<section class="section position-relative" style="z-index: -14;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -109,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 mb-80">
+      <div class="col-lg-6 col-md-6 mb-80 mt-md-0 mt-5">
         <div class="d-flex">
           <div class="mr-lg-5 mr-3">
             <i class="fas fa-graduation-cap fa-2x icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
@@ -123,8 +134,7 @@
       </div>
     </div>
   </div>
-  <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+
 </section>
 
 <section class="section">
@@ -206,9 +216,7 @@
 
 
     </div>
-  </div>
 </section>
-
 
    <style>
      .gallery {
@@ -258,33 +266,7 @@
 
 
 
-</div>
 
-
-<!-- Modal -->
-<!-- <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
-    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
-        <div class="modal-content-full-width modal-content ">
-            <div class=" modal-header-full-width   modal-header text-center">
-                <h5 class="modal-title w-100" id="exampleModalPreviewLabel">Material Design  Full Screen Modal</h5>
-                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-                    <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-                <h1 class="section-heading text-center wow fadeIn my-5 pt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                   sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-            </div>
-            <div class="modal-footer-full-width  modal-footer">
-                <button type="button" class="btn btn-danger btn-md btn-rounded" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <div id="myNav" class="overlay">
   <div class="overley-content text-center">
@@ -322,7 +304,7 @@
   </div>
 
 </footer>
-
+</div>
   </body>
 
 <style>
@@ -353,33 +335,55 @@ $(".filter").click(function () {
 });
 });
 
+$( ".button_lumiere" ).click(function() {
+    $('.call-to-action').css('opacity', '0'); // ma méthode modifiera la propriété "color" et la définira à "red"
+    $('.sombre').animate({
+            'opacity': '0'
+        }, 3000, function () {
+            $('.sombre').hide();
+        });
+});
+
+$( ".button_lumiere" ).click(function() {
+    $('.main').css('display', 'initial'); // ma méthode modifiera la propriété "color" et la définira à "red"
+    $('.main').css('opacity', 'initial'); // ma méthode modifiera la propriété "color" et la définira à "red"
+});
+
+$(document).mousemove(function (evt) {
+       if ($('.sombre').css('display') != 'none') {
+           var left = evt.clientX;
+           var top = evt.clientY;
+           $('.sombre').css('background-image', 'radial-gradient(100px at ' + left + 'px ' + top + 'px, transparent, black)');
+       }
+   });
 
 </script>
 
 <script type="text/javascript">
-ScrollReveal().reveal('#title_pres', {
-	origin: 'left',
-	distance: '300px',
-    duration: 1200,
-});
-
-ScrollReveal().reveal('.section-title', {
-	origin: 'right',
-	distance: '300px',
-    duration: 1200,
-});
-
-ScrollReveal().reveal('.section-title-exp', {
-	origin: 'left',
-	distance: '300px',
-    duration: 1200,
-});
-
-ScrollReveal().reveal('.section-title-exp3', {
-	origin: 'right',
-	distance: '300px',
-    duration: 1200,
-});
+//
+// ScrollReveal().reveal('#title_pres', {
+// 	origin: 'left',
+// 	distance: '300px',
+//     duration: 1200,
+// });
+//
+// ScrollReveal().reveal('.section-title', {
+// 	origin: 'right',
+// 	distance: '300px',
+//     duration: 1200,
+// });
+//
+// ScrollReveal().reveal('.section-title-exp', {
+// 	origin: 'left',
+// 	distance: '300px',
+//     duration: 1200,
+// });
+//
+// ScrollReveal().reveal('.section-title-exp3', {
+// 	origin: 'right',
+// 	distance: '300px',
+//     duration: 1200,
+// });
 
 
 </script>
