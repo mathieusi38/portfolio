@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title></title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
@@ -56,10 +57,14 @@
 
         </div>
 
+        <hr class="sous_header">
+
 
 </div>
 
       </header>
+<div class="sombre_max">
+
 <div class="sombre">
 <div class="call-to-action text-center">
     <p id="text_light">
@@ -94,14 +99,19 @@ Il Faudrait mettre de la lumière.
   </div>
   </div>
 
-    <div class="button"  style="z-index: -14;">Mon CV</div>
+    <div class="button"  style="z-index: 1;">Mon CV</div>
 
 
 </div>
+</div>
 <div class="main" >
 
-<section class="section position-relative" style="z-index: -14;">
+<section class="section position-relative test" style="z-index: -14; margin-top: 22em;">
   <div class="container">
+    <div class="section-couleur">
+      <div class="section-couleur-after">
+
+      </div>
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">Education</h2>
@@ -134,42 +144,73 @@ Il Faudrait mettre de la lumière.
       </div>
     </div>
   </div>
+</div>
 
 </section>
 
-<section class="section">
+
+<section>
   <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title-exp">Experience</h2>
-      </div>
-      <div class="col-lg-2 col-md-2 text-center">
-        <i class="fab fa-html5 fa-4x icone-skill pb-3"></i>
-        <h4 id="name_skill">HTML</h4>
-      </div>
-      <div class="col-lg-2 col-md-2 text-center">
-        <i class="fab fa-css3-alt fa-4x icone-skill pb-3"></i>
-        <h4 id="name_skill">CSS</h4>
-      </div>
-      <div class="col-lg-2 col-md-2 text-center">
-        <i class="fab fa-js-square fa-4x icone-skill pb-3"></i>
-        <h4 id="name_skill">javascript</h4>
-      </div>
-      <div class="col-lg-2 col-md-2 text-center">
-        <i class="fab fa-wordpress fa-4x icone-skill pb-3"></i>
-        <h4 id="name_skill">WordPress</h4>
-      </div>
-      <div class="col-lg-2 col-md-2 text-center">
-        <i class="fab fa-php fa-4x icone-skill pb-3"></i>
-        <h4 id="name_skill">PHP</h4>
-      </div>
-      <div class="col-lg-2 col-md-2 text-center">
-        <i class="fab fa-react fa-4x icone-skill pb-3"></i>
-        <h4 id="name_skill">ReactJS</h4>
-      </div>
-    </div>
+    <div class="blocks-tools">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title-exp">Compétences</h2>
+          </div>
+          <div class="col-12 col-md-4">
+
+                      <div class="dev-front m-4 m-md-0">
+                          <div class="contain-tools">
+                              <img src="pencil.svg" alt="front-icon">
+                              <h3>Front</h3>
+                              <hr>
+                              <p>HTML5</p>
+                              <p>CSS3</p>
+                              <p>JavaScript</p>
+                              <p>jQuery</p>
+                              <p>TypeScript</p>
+                              <p>SASS</p>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="col-12 col-md-4 mt-5 mt-md-0 ">
+                      <div class="dev-back m-4 m-md-0">
+                          <div class="contain-tools">
+                              <img src="back.svg" alt="back-icon">
+                              <h3>Back</h3>
+                              <hr>
+                              <p>PHP</p>
+                              <p>MySQL</p>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="col-12 col-md-4 mt-5 mt-md-0">
+                      <div class="infographie m-4 m-md-0">
+                          <div class="contain-tools">
+                              <img src="computer-graphic.svg" alt="info-icon">
+                              <h3>Infographie And Co</h3>
+                              <hr>
+                              <p>Adobe XD</p>
+                              <p>Figma</p>
+                              <p>WordPress</p>
+                              <p>Photoshop</p>
+                              <p>Illustrator</p>
+                              <p>Indesign</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+</div>
+
+
+
+
   </div>
+
+
+
 </section>
+
+
 
 <section class="section">
   <div class="container-fluid pl-0">
@@ -180,28 +221,38 @@ Il Faudrait mettre de la lumière.
     </div>
 
         <div class="card-column column-0">
-          <div  id="openNav" class="card card-color-0 " data-toggle="modal" data-target="#exampleModalPreview">>
+          <div  id="openNav" class="card card-color-0 " data-toggle="modal" data-target="#exampleModalPreview">
             <div class="border"></div>
             <img src="adopt.jpg" />
             <h1> Adopt-Systems - Flo</h1>
           </div>
-          <div class="card card-color-2">
+          <div id="openNav" class="card card-color-1">
             <div class="border"></div>
             <img src="img_escape_game_1.jpg" />
             <h1>Escape Game : Immersive</h1>
+          </div>
+          <div class="card card-color-2">
+            <div class="border"></div>
+            <img src="img_escape_game_1.jpg" />
+            <h1>Platformes technologiques UGA</h1>
           </div>
         </div>
 
         <div class="card-column column-1">
-          <div class="card card-color-1">
+          <div  id="openNav" class="card card-color-3 " data-toggle="modal" data-target="#exampleModalPreview">
             <div class="border"></div>
-            <img src="adopt.jpg" />
-            <h1> Adopt-Systems - Flo</h1>
+            <img src="wordpress.png" />
+            <h1> Site Agence - Wordpress</h1>
           </div>
-          <div class="card card-color-2">
+          <div class="card card-color-4">
             <div class="border"></div>
             <img src="img_escape_game_1.jpg" />
-            <h1>Escape Game : Immersive</h1>
+            <h1>Site de vente de cd</h1>
+          </div>
+          <div class="card card-color-4">
+            <div class="border"></div>
+            <img src="img_escape_game_1.jpg" />
+            <h1>Magazine sur le graffiti</h1>
           </div>
         </div>
 
@@ -274,8 +325,8 @@ Il Faudrait mettre de la lumière.
   <!-- <img id="img_content" src="adopt.jpg" alt="" /> -->
   <!-- 16:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-16by9">
-  <video class="embed-responsive-item video-fluid z-depth-1" autoplay loop controls muted>
-  <source id="video_content" src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+  <video class="embed-responsive-item video-fluid z-depth-1" loop controls muted>
+  <source id="video_content" src="2020-05-10-1755-44.mp4" type="video/mp4" />
 </video>
 </div>
   <h4 id="content_title">Adopt-Systems</h4>
@@ -294,10 +345,13 @@ Il Faudrait mettre de la lumière.
 </div>
 
 
+
+
+
 <footer>
 
 
-  <div class="social-btns">
+  <div class="social-btns mt-5 mt-xl-0">
     <a class="btn twitter" href="#"><i class="fab fa-twitter fa-3x"></i></a>
     <a class="btn google" href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
     <a class="btn dribbble" href="#"><i class="far fa-envelope"></i></a>
@@ -314,14 +368,19 @@ Il Faudrait mettre de la lumière.
 
 
 body{
-
+/*
   background-color: #330033;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");*/
 
 }
 </style>
 
 <script type="text/javascript">
+ScrollReveal().reveal('.button_lumiere', {
+  origin: 'left',
+  distance: '300px',
+    duration: 1200,
+});
 $(function () {
 var selectedClass = "";
 $(".filter").click(function () {
@@ -335,16 +394,46 @@ $(".filter").click(function () {
 });
 });
 
+
+
+
 $( ".button_lumiere" ).click(function() {
+
+  ScrollReveal().reveal('#title_pres', {
+  	origin: 'left',
+  	distance: '300px',
+      duration: 1200,
+  });
+
+  ScrollReveal().reveal('.section-title', {
+  	origin: 'right',
+  	distance: '300px',
+      duration: 1200,
+  });
+
+  ScrollReveal().reveal('.section-title-exp', {
+  	origin: 'left',
+  	distance: '300px',
+      duration: 1200,
+  });
+
+  ScrollReveal().reveal('.section-title-exp3', {
+  	origin: 'right',
+  	distance: '300px',
+      duration: 1200,
+  });
     $('.call-to-action').css('opacity', '0'); // ma méthode modifiera la propriété "color" et la définira à "red"
     $('.sombre').animate({
             'opacity': '0'
         }, 3000, function () {
             $('.sombre').hide();
+
         });
 });
 
 $( ".button_lumiere" ).click(function() {
+  $('.sombre_max').css('height', 'initial'); // ma méthode modifiera la propriété "color" et la définira à "red"
+  $('.sombre_max').css('overflow', 'initial'); // ma méthode modifiera la propriété "color" et la définira à "red"
     $('.main').css('display', 'initial'); // ma méthode modifiera la propriété "color" et la définira à "red"
     $('.main').css('opacity', 'initial'); // ma méthode modifiera la propriété "color" et la définira à "red"
 });
